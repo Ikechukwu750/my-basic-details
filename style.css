@@ -1,0 +1,427 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Jost, serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  font-size: large;
+  background-color: #696cff;
+  color: #fff;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+  position: relative;
+}
+
+.home h2 a {
+  color: white;
+  letter-spacing: 2px;
+}
+
+header ul li a:hover {
+  background-color: white;
+  color: #696cff;
+}
+
+nav {
+  display: flex;
+}
+
+nav button {
+  background-color: #b00;
+  outline: 0px;
+  border: 0px;
+  color: white;
+  font-weight: bold;
+  padding: 14px 16px;
+  font-size: 1.2rem;
+  display: none;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  padding: 17px 14px;
+  position: relative;
+}
+
+.active {
+  background-color: #191c85;
+}
+
+main {
+  margin: 1rem auto 2rem;
+  width: 60%;
+  box-shadow: 0 0 10px #bbb;
+  padding: 2rem;
+  background-color: #eeeeeee0;
+}
+
+/* Styles for About Me Page starts here */
+
+#name {
+  text-align: center;
+  background-color: #191c85;
+  color: white;
+  margin: -2rem;
+  padding: 1rem;
+}
+
+#name h2 {
+  letter-spacing: 2px;
+}
+
+#name img {
+  margin-bottom: 10px;
+  border: 3px solid #696cff;
+  border-radius: 50%;
+}
+
+#about-me {
+  margin-top: 3.5rem;
+}
+
+#about-me p {
+  color: #0a221a;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+#about-me h3,
+#hobbies h3,
+#priorities h3,
+#other-skills h3 {
+  color: #696cff;
+  margin-bottom: 6px;
+}
+
+main hr {
+  border: 2px solid #191c85;
+}
+
+#hobbies li,
+#other-skills li {
+  list-style-type: disc;
+  list-style-position: inside;
+  color: #0a221a;
+}
+
+#priorities li {
+  list-style-position: inside;
+}
+
+#contact-section {
+  width: 100%;
+}
+
+#contact-section a {
+  display: block;
+  background-color: #191c85;
+  color: white;
+  text-align: center;
+  padding: 10px 30px;
+  border-radius: 6px;
+  font-size: 120%;
+  transition: 0.3s;
+}
+
+#contact-section a:hover {
+  background-color: #696cff;
+  color: white;
+  transition: 0.3s;
+}
+
+main section {
+  margin-top: 1.5rem;
+}
+
+/* Styles for About Me Page ends here */
+
+/* Contact Me Styles */
+
+#contact-head,
+#sign-up-head,
+#login-head {
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #191c85;
+}
+
+#contact-info {
+  max-width: 500px;
+  margin: 1rem auto 0 auto;
+  min-height: 300px;
+}
+
+#contact-info input,
+#contact-info textarea,
+#contact-info button {
+  border: none;
+  outline: none;
+}
+
+#contact-info input,
+#contact-info textarea {
+  max-width: 100%;
+  min-width: 40%;
+  width: 100%;
+  padding: 6px 9px;
+  margin-bottom: 0.8rem;
+  margin-top: 0.4rem;
+}
+
+#contact-info textarea {
+  max-height: 170px;
+}
+
+#contact-info button {
+  position: relative;
+  background-color: #191c85;
+  padding: 8px 35px;
+  border-radius: 5px;
+  color: white;
+  font-size: 120%;
+  margin-top: 0.4rem;
+}
+
+#contact-info button:hover {
+  background-color: #696cff;
+  transition: 0.3s;
+}
+
+/* End of Contact Styles */
+
+/* Sign-up Page Styles */
+
+#sign-up {
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+#sign-up input:not(#agreement) {
+  display: block;
+  width: 100%;
+  padding: 8px 10px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #696cff;
+  margin-bottom: 1.2rem;
+  margin-top: 4px;
+  border-radius: 6px;
+}
+
+#sign-up select {
+  display: block;
+  width: 30%;
+  padding: 8px 10px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #696cff;
+  margin-bottom: 1rem;
+  margin-top: 4px;
+  border-radius: 6px;
+}
+
+#sign-up label[for="agreement"] {
+  margin-left: 6px;
+}
+
+#sign-up button,
+#login button {
+  background-color: #191c85;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 10px 40px;
+  font-size: 120%;
+  border-radius: 6px;
+}
+#sign-up button {
+  margin-top: 1rem;
+}
+
+#sign-up button:hover,
+#login button:hover {
+  background-color: #696cff;
+  transition: 0.4s;
+}
+
+/* End of Sign-up Page Styles */
+
+/* Styles for Login Page are below */
+
+#login {
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+#login input[type="email"],
+#login input[type="password"] {
+  display: block;
+  width: 100%;
+  padding: 8px 10px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #696cff;
+  margin-top: 4px;
+  border-radius: 6px;
+}
+
+#login input[type="checkbox"] {
+  margin-bottom: 1.2rem;
+}
+
+#login p, #sign-up p {
+  text-align: center;
+}
+
+#login button, #sign-up button {
+  margin-bottom: 1rem;
+}
+
+#login p a,
+#login p a:visited,
+#sign-up label a,
+#sign-up label a:visited,
+#sign-up p a,
+#sign-up p a:hover {
+  color: #191c85;
+  font-weight: bold;
+}
+
+#login label[for="remember-me"] {
+  margin: 0 0 0 0.5rem;
+}
+
+footer {
+  background-color: #696cff;
+  color: white;
+  min-height: 40px;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+#social-group {
+  display: flex;
+  justify-content: space-around;
+  width: 160px;
+  margin: 12px auto;
+}
+
+i {
+  color: white;
+}
+
+.social {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  padding: 3px;
+}
+
+@media only screen and (max-width: 700px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em 0;
+  }
+
+  nav ul {
+    position: relative;
+    left: 1px;
+    display: flex;
+    width: 100%;
+    align-content: center;
+  }
+
+  nav ul li a {
+    color: #191c85;
+    padding: 10px 12px;
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+
+  header ul li a:hover {
+    background-color: #696cff;
+    color: white;
+    transition: 0.3s;
+  }
+
+  .active {
+    background-color: #191c85;
+    color: white;
+    transition: 0.3s;
+  }
+
+  nav {
+    position: relative;
+    top: 0.8rem;
+    align-self: flex-start;
+    width: 100%;
+  }
+
+  main {
+    width: 95%;
+    padding: 1rem;
+    margin-top: 5.5rem;
+  }
+
+  #name {
+    margin: -1rem;
+  }
+
+  #contact-info input,
+  #contact-info textarea,
+  #contact-info button {
+    float: none;
+    display: block;
+    margin-bottom: -12px;
+  }
+
+  #contact-info {
+    width: 90%;
+    margin: 1rem auto;
+    height: 400px;
+  }
+
+  #contact-info button {
+    background-color: #191c85;
+    padding: 8px 50px;
+    color: white;
+    font-size: 120%;
+    margin-left: 0rem;
+  }
+
+  #contact-btn {
+    float: none;
+  }
+}

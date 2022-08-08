@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Iyke's HTML Page</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/30acee10e5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+
+        <div class="home">
+            <h2><a href="#">Iyke Codez</a></h2>
+        </div>
+
+        <nav>
+
+            <ul class="nav-items">
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#" class="active">Register</a></li>
+                <li><a href="sign-in.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sign-up-head">
+            <h2>Sign Up</h2>
+            <p>It's quick and easy</p>
+        </section>
+        <hr>
+        <section>
+            <form action="" id="sign-up">
+                <label for="firstname">First Name:</label><br>
+                <input type="text" name="firstname" id="firstname" placeholder="John" required>
+
+                <label for="lastname">Last Name:</label><br>
+                <input type="text" name="lastname" id="lastname" placeholder="Doe" required>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" name="phone" id="tel" placeholder="+234-801-2345-678" required>
+
+                <label for="gender">Gender:</label><br>
+                <select name="gender" id="gender">
+                    <option value="none" selected disabled>Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="country">Country:</label><br>
+                <input type="text" name="country" id="country" placeholder="Nigeria" required>
+
+                <label for="state">State/Province:</label><br>
+                <input type="text" name="state" id="state" placeholder="Lagos" required>
+
+                <label for="email">Email:</label><br>
+                <input type="email" name="email" id="email" placeholder="someone@example.com" required>
+
+                <label for="password">Password:</label><br>
+                <input type="password" name="password" id="password" placeholder="Choose a password" required>
+
+                <label for="confirm-password">Confirm Password:</label><br>
+                <input type="password" name="confirm-password" id="confirm-password" placeholder="Re-enter password" required>
+
+                <input type="checkbox" name="agreement" id="agreement" required>
+                <label for="agreement">I accept the <a href="#">Terms of Use</a> and <a href="#">Privacy Policy.</a></label><br>
+
+                <button type="submit">Sign Up</button><br>
+
+                <p>Already have an account? <a href="sign-in.html">Sign In</a></p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div id="social-group">
+            <div class="social">
+              <a href="https://www.facebook.com/ikechukwu750" target="_blank"> <i class="fab fa-facebook-f"></i> </a>
+            </div>
+            <div class="social">
+              <a href="https://www.twitter.com/iyke4web" target="_blank"> <i class="fab fa-twitter"></i> </a>
+            </div>
+            <div class="social">
+              <a href="https://www.linkedin.com/in/ikechukwu-kalu-059528235" target="_blank"> <i class="fab fa-linkedin"></i> </a>
+            </div>
+          </div>
+        <p>Designed and Developed by Iyke</p>
+        <p>Copyright &copy; 2022 - All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
